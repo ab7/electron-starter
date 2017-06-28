@@ -2,14 +2,27 @@
   "name": "electron-starter",
   "version": "1.0.0",
   "description": "Opinionated Electron boilerplate.",
-  "main": "main.js",
+  "main": "app/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-packager . 'electron-starter' --overwrite --icon ./icons/icon"
   },
   "repository": "https://github.com/ab7/electron-starter",
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "ab7",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "electron": "~1.6.2",
+    "react": "^15.6.1"
+  },
   "devDependencies": {
-    "electron": "~1.6.2"
+    "electron-packager": "^8.7.2",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-react": "^3.1.0",
+    "gulp-run": "^1.7.1",
+    "react-dom": "^15.6.1",
+    "reactify": "^1.1.1"
   }
 }
